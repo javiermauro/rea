@@ -2,7 +2,7 @@ REA npm dependency inventory
 Prepared from the root package-lock.json; refresh this inventory when locked dependencies change.
 License identifiers are upstream lockfile declarations, not a legal assessment.
 Runtime includes transitive and optional platform packages; development includes build, test and website tooling.
-Locked package entries: 963; runtime: 180.
+Locked package entries: 985; runtime: 204.
 Full runtime copyright/license/NOTICE texts: npm-runtime-notices.txt.
 
 @algolia/abtesting@1.25.0 | development | MIT
@@ -1445,6 +1445,96 @@ commander@13.1.0 | runtime | MIT
   Package: https://www.npmjs.com/package/@sec-ant/readable-stream/v/0.4.1
   Archive: https://registry.npmjs.org/@sec-ant/readable-stream/-/readable-stream-0.4.1.tgz
   Integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==
+@serialport/binding-mock@10.2.2 | runtime | MIT
+  Lockfile path: node_modules/@serialport/binding-mock
+  Package: https://www.npmjs.com/package/@serialport/binding-mock/v/10.2.2
+  Archive: https://registry.npmjs.org/@serialport/binding-mock/-/binding-mock-10.2.2.tgz
+  Integrity: sha512-HAFzGhk9OuFMpuor7aT5G1ChPgn5qSsklTFOTUX72Rl6p0xwcSVsRtG/xaGp6bxpN7fI9D/S8THLBWbBgS6ldw==
+@serialport/bindings-cpp@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/bindings-cpp
+  Package: https://www.npmjs.com/package/@serialport/bindings-cpp/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/bindings-cpp/-/bindings-cpp-13.0.0.tgz
+  Integrity: sha512-r25o4Bk/vaO1LyUfY/ulR6hCg/aWiN6Wo2ljVlb4Pj5bqWGcSRC4Vse4a9AcapuAu/FeBzHCbKMvRQeCuKjzIQ==
+@serialport/parser-delimiter@12.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-delimiter
+  Package: https://www.npmjs.com/package/@serialport/parser-delimiter/v/12.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-12.0.0.tgz
+  Integrity: sha512-gu26tVt5lQoybhorLTPsH2j2LnX3AOP2x/34+DUSTNaUTzu2fBXw+isVjQJpUBFWu6aeQRZw5bJol5X9Gxjblw==
+@serialport/parser-readline@12.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-readline
+  Package: https://www.npmjs.com/package/@serialport/parser-readline/v/12.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-12.0.0.tgz
+  Integrity: sha512-O7cywCWC8PiOMvo/gglEBfAkLjp/SENEML46BXDykfKP5mTPM46XMaX1L0waWU6DXJpBgjaL7+yX6VriVPbN4w==
+debug@4.4.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/bindings-cpp/node_modules/debug
+  Package: https://www.npmjs.com/package/debug/v/4.4.0
+  Archive: https://registry.npmjs.org/debug/-/debug-4.4.0.tgz
+  Integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
+@serialport/bindings-interface@1.2.2 | runtime | MIT
+  Lockfile path: node_modules/@serialport/bindings-interface
+  Package: https://www.npmjs.com/package/@serialport/bindings-interface/v/1.2.2
+  Archive: https://registry.npmjs.org/@serialport/bindings-interface/-/bindings-interface-1.2.2.tgz
+  Integrity: sha512-CJaUd5bLvtM9c5dmO9rPBHPXTa9R2UwpkJ0wdh9JCYcbrPWsKz+ErvR0hBLeo7NPeiFdjFO4sonRljiw4d2XiA==
+@serialport/parser-byte-length@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-byte-length
+  Package: https://www.npmjs.com/package/@serialport/parser-byte-length/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-byte-length/-/parser-byte-length-13.0.0.tgz
+  Integrity: sha512-32yvqeTAqJzAEtX5zCrN1Mej56GJ5h/cVFsCDPbF9S1ZSC9FWjOqNAgtByseHfFTSTs/4ZBQZZcZBpolt8sUng==
+@serialport/parser-cctalk@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-cctalk
+  Package: https://www.npmjs.com/package/@serialport/parser-cctalk/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-cctalk/-/parser-cctalk-13.0.0.tgz
+  Integrity: sha512-RErAe57g9gvnlieVYGIn1xymb1bzNXb2QtUQd14FpmbQQYlcrmuRnJwKa1BgTCujoCkhtaTtgHlbBWOxm8U2uA==
+@serialport/parser-delimiter@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-delimiter
+  Package: https://www.npmjs.com/package/@serialport/parser-delimiter/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-13.0.0.tgz
+  Integrity: sha512-Qqyb0FX1avs3XabQqNaZSivyVbl/yl0jywImp7ePvfZKLwx7jBZjvL+Hawt9wIG6tfq6zbFM24vzCCK7REMUig==
+@serialport/parser-inter-byte-timeout@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-inter-byte-timeout
+  Package: https://www.npmjs.com/package/@serialport/parser-inter-byte-timeout/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-inter-byte-timeout/-/parser-inter-byte-timeout-13.0.0.tgz
+  Integrity: sha512-a0w0WecTW7bD2YHWrpTz1uyiWA2fDNym0kjmPeNSwZ2XCP+JbirZt31l43m2ey6qXItTYVuQBthm75sPVeHnGA==
+@serialport/parser-packet-length@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-packet-length
+  Package: https://www.npmjs.com/package/@serialport/parser-packet-length/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-packet-length/-/parser-packet-length-13.0.0.tgz
+  Integrity: sha512-60ZDDIqYRi0Xs2SPZUo4Jr5LLIjtb+rvzPKMJCohrO6tAqSDponcNpcB1O4W21mKTxYjqInSz+eMrtk0LLfZIg==
+@serialport/parser-readline@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-readline
+  Package: https://www.npmjs.com/package/@serialport/parser-readline/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-13.0.0.tgz
+  Integrity: sha512-dov3zYoyf0dt1Sudd1q42VVYQ4WlliF0MYvAMA3MOyiU1IeG4hl0J6buBA2w4gl3DOCC05tGgLDN/3yIL81gsA==
+@serialport/parser-ready@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-ready
+  Package: https://www.npmjs.com/package/@serialport/parser-ready/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-ready/-/parser-ready-13.0.0.tgz
+  Integrity: sha512-JNUQA+y2Rfs4bU+cGYNqOPnNMAcayhhW+XJZihSLQXOHcZsFnOa2F9YtMg9VXRWIcnHldHYtisp62Etjlw24bw==
+@serialport/parser-regex@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-regex
+  Package: https://www.npmjs.com/package/@serialport/parser-regex/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-regex/-/parser-regex-13.0.0.tgz
+  Integrity: sha512-m7HpIf56G5XcuDdA3DB34Z0pJiwxNRakThEHjSa4mG05OnWYv0IG8l2oUyYfuGMowQWaVnQ+8r+brlPxGVH+eA==
+@serialport/parser-slip-encoder@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-slip-encoder
+  Package: https://www.npmjs.com/package/@serialport/parser-slip-encoder/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-slip-encoder/-/parser-slip-encoder-13.0.0.tgz
+  Integrity: sha512-fUHZEExm6izJ7rg0A1yjXwu4sOzeBkPAjDZPfb+XQoqgtKAk+s+HfICiYn7N2QU9gyaeCO8VKgWwi+b/DowYOg==
+@serialport/parser-spacepacket@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/parser-spacepacket
+  Package: https://www.npmjs.com/package/@serialport/parser-spacepacket/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/parser-spacepacket/-/parser-spacepacket-13.0.0.tgz
+  Integrity: sha512-DoXJ3mFYmyD8X/8931agJvrBPxqTaYDsPoly9/cwQSeh/q4EjQND9ySXBxpWz5WcpyCU4jOuusqCSAPsbB30Eg==
+@serialport/stream@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/stream
+  Package: https://www.npmjs.com/package/@serialport/stream/v/13.0.0
+  Archive: https://registry.npmjs.org/@serialport/stream/-/stream-13.0.0.tgz
+  Integrity: sha512-F7xLJKsjGo2WuEWMSEO1SimRcOA+WtWICsY13r0ahx8s2SecPQH06338g28OT7cW7uRXI7oEQAk62qh5gHJW3g==
+debug@4.4.0 | runtime | MIT
+  Lockfile path: node_modules/@serialport/stream/node_modules/debug
+  Package: https://www.npmjs.com/package/debug/v/4.4.0
+  Archive: https://registry.npmjs.org/debug/-/debug-4.4.0.tgz
+  Integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
 @shikijs/core@2.5.0 | development | MIT
   Lockfile path: node_modules/@shikijs/core
   Package: https://www.npmjs.com/package/@shikijs/core/v/2.5.0
@@ -2435,7 +2525,7 @@ dateformat@3.0.3 | development | MIT
   Package: https://www.npmjs.com/package/dateformat/v/3.0.3
   Archive: https://registry.npmjs.org/dateformat/-/dateformat-3.0.3.tgz
   Integrity: sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
-debug@4.4.3 | development | MIT
+debug@4.4.3 | runtime | MIT
   Lockfile path: node_modules/debug
   Package: https://www.npmjs.com/package/debug/v/4.4.3
   Archive: https://registry.npmjs.org/debug/-/debug-4.4.3.tgz
@@ -3430,7 +3520,7 @@ modify-values@1.0.1 | development | MIT
   Package: https://www.npmjs.com/package/modify-values/v/1.0.1
   Archive: https://registry.npmjs.org/modify-values/-/modify-values-1.0.1.tgz
   Integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
-ms@2.1.3 | development | MIT
+ms@2.1.3 | runtime | MIT
   Lockfile path: node_modules/ms
   Package: https://www.npmjs.com/package/ms/v/2.1.3
   Archive: https://registry.npmjs.org/ms/-/ms-2.1.3.tgz
@@ -3480,6 +3570,16 @@ node-abi@3.98.0 | runtime, optional | MIT
   Package: https://www.npmjs.com/package/node-abi/v/3.98.0
   Archive: https://registry.npmjs.org/node-abi/-/node-abi-3.98.0.tgz
   Integrity: sha512-Llh8noNw7s15m+rmIrZnZQbe4gLyasL9loT74rC92PkmwWKeEedKvc7o6pjp8B3MhrYT/Cl846NOYZbz1wmddw==
+node-addon-api@8.3.0 | runtime | MIT
+  Lockfile path: node_modules/node-addon-api
+  Package: https://www.npmjs.com/package/node-addon-api/v/8.3.0
+  Archive: https://registry.npmjs.org/node-addon-api/-/node-addon-api-8.3.0.tgz
+  Integrity: sha512-8VOpLHFrOQlAH+qA0ZzuGRlALRA6/LVh8QJldbrC4DY0hXoMP0l4Acq8TzFC018HztWiRqyCEj2aTWY2UvnJUg==
+node-gyp-build@4.8.4 | runtime | MIT
+  Lockfile path: node_modules/node-gyp-build
+  Package: https://www.npmjs.com/package/node-gyp-build/v/4.8.4
+  Archive: https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.8.4.tgz
+  Integrity: sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==
 node-html-parser@6.1.13 | development | MIT
   Lockfile path: node_modules/node-html-parser
   Package: https://www.npmjs.com/package/node-html-parser/v/6.1.13
@@ -4000,6 +4100,16 @@ semver@7.8.5 | runtime | ISC
   Package: https://www.npmjs.com/package/semver/v/7.8.5
   Archive: https://registry.npmjs.org/semver/-/semver-7.8.5.tgz
   Integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==
+serialport@13.0.0 | runtime | MIT
+  Lockfile path: node_modules/serialport
+  Package: https://www.npmjs.com/package/serialport/v/13.0.0
+  Archive: https://registry.npmjs.org/serialport/-/serialport-13.0.0.tgz
+  Integrity: sha512-PHpnTd8isMGPfFTZNCzOZp9m4mAJSNWle9Jxu6BPTcWq7YXl5qN7tp8Sgn0h+WIGcD6JFz5QDgixC2s4VW7vzg==
+debug@4.4.0 | runtime | MIT
+  Lockfile path: node_modules/serialport/node_modules/debug
+  Package: https://www.npmjs.com/package/debug/v/4.4.0
+  Archive: https://registry.npmjs.org/debug/-/debug-4.4.0.tgz
+  Integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
 set-function-length@1.2.2 | runtime | MIT
   Lockfile path: node_modules/set-function-length
   Package: https://www.npmjs.com/package/set-function-length/v/1.2.2

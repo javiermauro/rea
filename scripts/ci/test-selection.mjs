@@ -5,6 +5,7 @@ import { matchesGlob } from "node:path";
 // Shared application/domain code and dynamic CLI/MCP consumers are not leaf owners.
 const OWNERS = {
   adb: ["src/adb/**", "tests/boundary/providers/adb/**"],
+  flipper: ["src/flipper/**"],
   apktool: ["src/apktool/**"],
   dotnet: ["src/dotnet/**"],
   evm: ["src/evm/**", "tests/boundary/evm/**"],

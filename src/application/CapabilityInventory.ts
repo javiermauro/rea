@@ -93,6 +93,7 @@ export type AvailabilityPolicy = {
   readonly firmwareExtractionEnabled?: boolean;
   readonly androidAnalysisAvailability?: ProviderAvailability;
   readonly adbAnalysisAvailability?: ProviderAvailability;
+  readonly flipperAnalysisAvailability?: ProviderAvailability;
   readonly apktoolAnalysisAvailability?: ProviderAvailability;
   readonly jebAnalysisAvailability?: JebAnalysisAvailability;
   readonly javascriptRecoveryEnabled?: boolean;
@@ -592,6 +593,11 @@ const workflowAvailabilityFor = ({
     return ownerProbeAvailability(
       policy.adbAnalysisAvailability,
       "Set REA_ADB_PATH to a caller-supplied adb executable or make adb available on PATH. This checks the client version only; device and serial availability depend on the request.",
+    );
+  if (kind === "flipper-provider")
+    return ownerProbeAvailability(
+      policy.flipperAnalysisAvailability,
+      "Install REA with its serialport dependency on a platform with a prebuilt binding. This checks the serial binding only; attached devices depend on the request.",
     );
   if (kind === "apktool-provider")
     return ownerProbeAvailability(

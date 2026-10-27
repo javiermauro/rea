@@ -474,6 +474,15 @@ export const TOOL_EFFECTS: Readonly<Record<string, ToolEffects>> = {
     mutatesDevice: true,
     idempotent: false,
   }),
+  list_flipper_devices: effects({ mutatesSession: true }),
+  inspect_flipper_device: effects({ mutatesSession: true }),
+  list_flipper_directory: effects({ mutatesSession: true }),
+  inspect_flipper_capture: effects({ mutatesSession: true }),
+  pull_flipper_file: effects({
+    mutatesSession: true,
+    writesFilesystem: true,
+    idempotent: false,
+  }),
   search_android_classes: effects({
     mutatesSession: true,
     launchesProcess: true,

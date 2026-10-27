@@ -35,6 +35,9 @@ export interface SessionAvailabilityProbes {
   readonly adbAnalysisAvailability?: (
     signal: AbortSignal,
   ) => Promise<ProviderAvailability>;
+  readonly flipperAnalysisAvailability?: (
+    signal: AbortSignal,
+  ) => Promise<ProviderAvailability>;
   readonly apktoolAnalysisAvailability?: (
     signal: AbortSignal,
   ) => Promise<ProviderAvailability>;
@@ -67,6 +70,7 @@ const probeSessionAvailability = (
 ): Promise<{
   readonly android: ProviderAvailability | undefined;
   readonly adb: ProviderAvailability | undefined;
+  readonly flipper: ProviderAvailability | undefined;
   readonly apktool: ProviderAvailability | undefined;
   readonly jeb: JebAnalysisAvailability | undefined;
   readonly evmLimiter: ProviderAvailability | undefined;
@@ -78,6 +82,9 @@ const probeSessionAvailability = (
     advertisesFamily("adb")
       ? (probes.adbAnalysisAvailability?.(signal) ?? undefined)
       : undefined,
+    advertisesFamily("flipper")
+      ? (probes.flipperAnalysisAvailability?.(signal) ?? undefined)
+      : undefined,
     advertisesFamily("apktool")
       ? (probes.apktoolAnalysisAvailability?.(signal) ?? undefined)
       : undefined,
@@ -87,9 +94,10 @@ const probeSessionAvailability = (
     advertisesFamily("artifact")
       ? (probes.evmLimiterAvailability?.(signal) ?? undefined)
       : undefined,
-  ] as const).then(([android, adb, apktool, jeb, evmLimiter]) => ({
+  ] as const).then(([android, adb, flipper, apktool, jeb, evmLimiter]) => ({
     android,
     adb,
+    flipper,
     apktool,
     jeb,
     evmLimiter,
@@ -138,6 +146,9 @@ export const registerSessionStatusTool = (
         ...(availabilityResults.adb === undefined
           ? {}
           : { adbAnalysisAvailability: availabilityResults.adb }),
+        ...(availabilityResults.flipper === undefined
+          ? {}
+          : { flipperAnalysisAvailability: availabilityResults.flipper }),
         ...(availabilityResults.apktool === undefined
           ? {}
           : { apktoolAnalysisAvailability: availabilityResults.apktool }),

@@ -30,6 +30,7 @@ import { PCAP_TOOL_CONTRACTS } from "./pcap/pcapToolContracts.js";
 import { FLUTTER_TOOL_CONTRACTS } from "./flutter/flutterToolContracts.js";
 import { JEB_TOOL_CONTRACTS } from "./jeb/jebToolContracts.js";
 import { ADB_TOOL_CONTRACTS } from "./adb/adbToolContracts.js";
+import { FLIPPER_TOOL_CONTRACTS } from "./flipper/flipperToolContracts.js";
 import { MANAGED_WORKFLOW_TOOL_CONTRACTS } from "./managed/managedWorkflowToolContracts.js";
 import { BROWSER_PROVIDER_TOOL_CONTRACTS } from "./browserProviderToolContracts.js";
 import { ELECTRON_TOOL_CONTRACTS } from "./javascript/electronToolContracts.js";
@@ -131,6 +132,11 @@ export const TOOL_FAMILY_DEFINITIONS = [
   },
   { id: "jeb", surface: "jeb-provider", contracts: JEB_TOOL_CONTRACTS },
   { id: "adb", surface: "adb-provider", contracts: ADB_TOOL_CONTRACTS },
+  {
+    id: "flipper",
+    surface: "flipper-provider",
+    contracts: FLIPPER_TOOL_CONTRACTS,
+  },
   {
     id: "browser",
     surface: "browser-provider",

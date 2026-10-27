@@ -166,6 +166,7 @@ import { registerPcapTools } from "./registerPcapTools.js";
 import { registerFlutterTools } from "./registerFlutterTools.js";
 import { registerJebTools } from "./registerJebTools.js";
 import { registerAdbTools } from "./registerAdbTools.js";
+import { registerFlipperTools } from "./registerFlipperTools.js";
 import { AndroidAnalysisService } from "../application/android/AndroidAnalysisService.js";
 import { JebAnalysisService } from "../application/jeb/JebAnalysisService.js";
 import type { AndroidAnalysisPort } from "../application/android/AndroidAnalysisPort.js";
@@ -186,6 +187,9 @@ import { createFlutterBuildAnalysisProvider } from "../composition/flutter.js";
 import type { JebAnalysisPort } from "../application/jeb/JebAnalysisPort.js";
 import { createJebAnalysisProvider } from "../composition/jeb.js";
 import type { AdbDeviceAnalysisPort } from "../application/adb/AdbDeviceAnalysisPort.js";
+import type { FlipperDeviceAnalysisPort } from "../application/flipper/FlipperDeviceAnalysisPort.js";
+import { FlipperDeviceAnalysisService } from "../application/flipper/FlipperDeviceAnalysisService.js";
+import { createFlipperDeviceAnalysisProvider } from "../composition/flipper.js";
 import { AdbDeviceAnalysisService } from "../application/adb/AdbDeviceAnalysisService.js";
 import { createAdbDeviceAnalysisProvider } from "../composition/adb.js";
 import { registerManagedWorkflowTools } from "./registerManagedWorkflowTools.js";
@@ -245,6 +249,7 @@ export interface CreateServerOptions {
   readonly flutterAnalysis?: FlutterBuildAnalysisPort;
   readonly jebAnalysis?: JebAnalysisPort;
   readonly adbDeviceAnalysis?: AdbDeviceAnalysisPort;
+  readonly flipperDeviceAnalysis?: FlipperDeviceAnalysisPort;
   readonly browserObservation?: BrowserObservationPort;
   readonly browserScenarioCapture?: BrowserScenarioCapturePort;
   readonly electronObservation?: ElectronObservationPort;
@@ -573,6 +578,8 @@ export const createServer = (
   const jeb = options.jebAnalysis ?? createJebAnalysisProvider(environment);
   const adbDevice =
     options.adbDeviceAnalysis ?? createAdbDeviceAnalysisProvider(environment);
+  const flipperDevice =
+    options.flipperDeviceAnalysis ?? createFlipperDeviceAnalysisProvider();
   const cutter = new CutterBridgeService(
     new CutterBridgeClient(providerEnvironment),
   );
@@ -589,6 +596,7 @@ export const createServer = (
       apktool.close(),
       jeb.close(),
       adbDevice.close(),
+      flipperDevice.close(),
       flutter.close(),
       pcap.close(),
       evmInterface.close(),
@@ -826,6 +834,13 @@ export const createServer = (
     recordEvidence,
     analysisAdmission,
   );
+  registerFlipperTools(
+    server,
+    new FlipperDeviceAnalysisService(flipperDevice),
+    toolLogger,
+    recordEvidence,
+    analysisAdmission,
+  );
   registerPcapTools(
     server,
     new PcapAnalysisService(pcap),
@@ -863,6 +878,8 @@ export const createServer = (
         : { evmLimiterAvailability: availability.evmLimiterAvailability }),
       androidAnalysisAvailability: (signal) =>
         android.inspectAvailability(signal),
+      flipperAnalysisAvailability: (signal) =>
+        flipperDevice.inspectAvailability(signal),
       adbAnalysisAvailability: (signal) =>
         adbDevice.inspectAvailability(signal),
       apktoolAnalysisAvailability: (signal) =>

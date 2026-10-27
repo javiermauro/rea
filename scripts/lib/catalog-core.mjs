@@ -99,6 +99,8 @@ const SOURCE_PATHS = {
   jebProvider: "dist/jeb/JebProvider.js",
   adbContracts: "dist/contracts/adb/adbToolContracts.js",
   adbProvider: "dist/adb/AdbProvider.js",
+  flipperContracts: "dist/contracts/flipper/flipperToolContracts.js",
+  flipperProvider: "dist/flipper/FlipperProvider.js",
   managedWorkflowContracts:
     "dist/contracts/managed/managedWorkflowToolContracts.js",
   browserContracts: "dist/contracts/browserToolContracts.js",

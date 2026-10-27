@@ -19,6 +19,7 @@ export const TOOL_FAMILY_IDS = [
   "apktool",
   "jeb",
   "adb",
+  "flipper",
   "browser",
   "electron",
   "javascript-runtime",

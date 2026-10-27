@@ -297,6 +297,10 @@ export const providerCatalog = (sources) => {
       contracts: sources.adbContracts.ADB_TOOL_CONTRACTS,
     },
     {
+      identity: sources.flipperProvider.FLIPPER_PROVIDER_IDENTITY,
+      contracts: sources.flipperContracts.FLIPPER_TOOL_CONTRACTS,
+    },
+    {
       identity: sources.webNetworkCaptureProvider.HAR_CAPTURE_PROVIDER_IDENTITY,
       contracts:
         sources.webNetworkCaptureContracts.WEB_NETWORK_CAPTURE_TOOL_CONTRACTS,
